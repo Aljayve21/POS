@@ -75,7 +75,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(93, 67);
+            this.button2.Location = new System.Drawing.Point(103, 67);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 23);
             this.button2.TabIndex = 4;
@@ -201,6 +201,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

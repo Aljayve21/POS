@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.productBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStock = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -104,19 +104,20 @@
             this.productBtn.UseVisualStyleBackColor = false;
             this.productBtn.Click += new System.EventHandler(this.productBtn_Click);
             // 
-            // button1
+            // btnStock
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(553, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "STOCK";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnStock.BackColor = System.Drawing.Color.Black;
+            this.btnStock.FlatAppearance.BorderSize = 0;
+            this.btnStock.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStock.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnStock.Location = new System.Drawing.Point(553, 29);
+            this.btnStock.Name = "btnStock";
+            this.btnStock.Size = new System.Drawing.Size(86, 23);
+            this.btnStock.TabIndex = 6;
+            this.btnStock.Text = "STOCK";
+            this.btnStock.UseVisualStyleBackColor = false;
+            this.btnStock.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -145,6 +146,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "USER ACCOUNT";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -166,6 +168,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1092, 498);
             this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox7
             // 
@@ -256,7 +259,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStock);
             this.Controls.Add(this.productBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -286,7 +289,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button productBtn;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -296,5 +298,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        public System.Windows.Forms.Button btnStock;
     }
 }

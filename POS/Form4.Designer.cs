@@ -28,223 +28,222 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Cancel = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
+            this.cborole = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.textretype = new System.Windows.Forms.TextBox();
+            this.textpass = new System.Windows.Forms.TextBox();
+            this.textname = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.metroTabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(539, 224);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 18);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "User Account";
             // 
-            // label2
+            // metroTabControl1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(18, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Create Account";
+            this.metroTabControl1.Controls.Add(this.tabPage1);
+            this.metroTabControl1.Controls.Add(this.tabPage2);
+            this.metroTabControl1.Controls.Add(this.tabPage3);
+            this.metroTabControl1.Location = new System.Drawing.Point(-1, 45);
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.Size = new System.Drawing.Size(479, 286);
+            this.metroTabControl1.TabIndex = 2;
+            this.metroTabControl1.UseSelectable = true;
+            this.metroTabControl1.Resize += new System.EventHandler(this.metroTabControl1_Resize);
             // 
-            // label3
+            // tabPage1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(105, 57);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Account List";
+            this.tabPage1.Controls.Add(this.panel1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 38);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(471, 244);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Create Account";
             // 
-            // label4
+            // panel1
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.DimGray;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(30, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Username";
+            this.panel1.Controls.Add(this.Cancel);
+            this.panel1.Controls.Add(this.Save);
+            this.panel1.Controls.Add(this.cborole);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.textretype);
+            this.panel1.Controls.Add(this.textpass);
+            this.panel1.Controls.Add(this.textname);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(471, 244);
+            this.panel1.TabIndex = 0;
+            // 
+            // Cancel
+            // 
+            this.Cancel.Location = new System.Drawing.Point(367, 194);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(83, 31);
+            this.Cancel.TabIndex = 9;
+            this.Cancel.Text = "Cancel";
+            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Save
+            // 
+            this.Save.Location = new System.Drawing.Point(265, 194);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(83, 31);
+            this.Save.TabIndex = 8;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cborole
+            // 
+            this.cborole.FormattingEnabled = true;
+            this.cborole.Items.AddRange(new object[] {
+            "Owner",
+            "Cashier"});
+            this.cborole.Location = new System.Drawing.Point(131, 150);
+            this.cborole.Name = "cborole";
+            this.cborole.Size = new System.Drawing.Size(232, 21);
+            this.cborole.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.DimGray;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(30, 141);
+            this.label5.Location = new System.Drawing.Point(22, 153);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Password";
+            this.label5.Size = new System.Drawing.Size(29, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Role";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label6
+            // textretype
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.DimGray;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(30, 175);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Confirm Password";
+            this.textretype.Location = new System.Drawing.Point(131, 110);
+            this.textretype.Name = "textretype";
+            this.textretype.PasswordChar = '•';
+            this.textretype.Size = new System.Drawing.Size(232, 20);
+            this.textretype.TabIndex = 5;
             // 
-            // label7
+            // textpass
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.DimGray;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(30, 207);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "User Type";
+            this.textpass.Location = new System.Drawing.Point(131, 68);
+            this.textpass.Name = "textpass";
+            this.textpass.PasswordChar = '•';
+            this.textpass.Size = new System.Drawing.Size(232, 20);
+            this.textpass.TabIndex = 4;
             // 
-            // label8
+            // textname
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.DimGray;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(30, 238);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Name";
+            this.textname.Location = new System.Drawing.Point(131, 26);
+            this.textname.Name = "textname";
+            this.textname.Size = new System.Drawing.Size(232, 20);
+            this.textname.TabIndex = 3;
             // 
-            // textBox1
+            // label4
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(147, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(383, 20);
-            this.textBox1.TabIndex = 9;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(22, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Re-type Password";
             // 
-            // textBox2
+            // label3
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(147, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(383, 20);
-            this.textBox2.TabIndex = 10;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Password";
             // 
-            // textBox3
+            // label2
             // 
-            this.textBox3.BackColor = System.Drawing.Color.DimGray;
-            this.textBox3.Location = new System.Drawing.Point(147, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(383, 20);
-            this.textBox3.TabIndex = 11;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Username";
             // 
-            // textBox4
+            // tabPage2
             // 
-            this.textBox4.BackColor = System.Drawing.Color.DimGray;
-            this.textBox4.Location = new System.Drawing.Point(147, 204);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(383, 20);
-            this.textBox4.TabIndex = 12;
+            this.tabPage2.Location = new System.Drawing.Point(4, 38);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(471, 244);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Change Password";
             // 
-            // textBox5
+            // tabPage3
             // 
-            this.textBox5.BackColor = System.Drawing.Color.DimGray;
-            this.textBox5.Location = new System.Drawing.Point(147, 235);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(383, 20);
-            this.textBox5.TabIndex = 13;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.DimGray;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(467, 277);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 13);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Change Password";
+            this.tabPage3.Location = new System.Drawing.Point(4, 38);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(471, 244);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Delete Account";
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(583, 309);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(474, 329);
+            this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "Form4";
             this.Text = "Form4";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form4_Load);
+            this.metroTabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox cborole;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textretype;
+        private System.Windows.Forms.TextBox textpass;
+        private System.Windows.Forms.TextBox textname;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Button Save;
     }
 }

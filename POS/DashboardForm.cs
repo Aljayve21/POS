@@ -41,5 +41,26 @@ namespace POS
             frm.BringToFront();
             frm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StockForm frm = new StockForm();
+            frm.LoadProduct();
+            frm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 frm = new Form4();
+            frm.TopLevel = false;
+            panel1.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
