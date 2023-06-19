@@ -23,43 +23,36 @@ namespace POS
             cn = new SqlConnection(dbcon.MyConnection());
         }
 
-        public void LoadProduct()
+        private void productBtn_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
-            cn.Open();
-            cm = new SqlCommand("Select * from tblproduct where description like '%" + txtSearch.Text + "%' order by description", cn);
-            dr = cm.ExecuteReader();
-            while (dr.Read())
-            {
-                dataGridView1.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[2].ToString()); 
-            }
-            dr.Close();
-            cn.Close();
+            StockInForm frm = new StockInForm();
+            
+            frm.Show();
+            frm.LoadProduct();
         }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            StockInForm frm = new StockInForm();
+          
+            frm.LoadStock();
+        }
+        public void LoadStock()
+        {
+            int i = 0;
+            dataGridView1.Rows.Clear();
+            cn.Open();
+            cm = new SqlCommand("SELECT * FROM viewStock", cn);
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                dataGridView1.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString());
+                dataGridView1.Rows.Add(i, dr["no"].ToString(), dr["description"].ToString(), dr["quantity"].ToString(), dr["stockindate"].ToString(), dr["stockinby"].ToString());
+            }
+            dr.Close();
+            cn.Close();
         }
     }
 }

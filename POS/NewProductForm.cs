@@ -29,11 +29,13 @@ namespace POS
         {
 
         }
+            
         private void Clear()
         {
             btnSave.Enabled = true;
             btnUpdate.Enabled = false;
-            
+     
+            txtProdCode.Focus();
 
             txtDescription.Clear();
             txtDescription.Focus();
@@ -53,8 +55,9 @@ namespace POS
                 if (MessageBox.Show("Are you sure you want to save this product?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("INSERT INTO tblProduct(Description, Brand, Category, Quantity, Price) VALUES(@description, @brand, @category, @quantity, @price)", cn);
                     
+                    cm = new SqlCommand("INSERT INTO tblProduct(Prodcode, Description, Brand, Category, Quantity, Price) VALUES(@prodcode, @description, @brand, @category, @quantity, @price)", cn);
+                    cm.Parameters.AddWithValue("@prodcode", txtProdCode.Text);
                     cm.Parameters.AddWithValue("@description", txtDescription.Text);
                     cm.Parameters.AddWithValue("@brand", cbBrand.Text);
                     cm.Parameters.AddWithValue("@category", cbCategory.Text);
@@ -64,7 +67,8 @@ namespace POS
                     cn.Close();
                     MessageBox.Show("Product has been successfully saved.");
                     Clear();
-                    frmlist1.LoadRecords();   
+                    frmlist1.LoadRecords();
+                    this.Dispose();
                 }
             }catch (Exception ex)
             {
@@ -84,8 +88,8 @@ namespace POS
                 if (MessageBox.Show("Are you sure you want to update this product?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("UPDATE tblProduct SET Description=@description, Brand=@brand, Category=@category, Quantity=@quantity, Price=@price", cn);
-                    
+                    cm = new SqlCommand("UPDATE tblProduct SET Description=@description, Brand=@brand, Category=@category, Quantity=@quantity, Price=@price WHERE Prodcode=@prodcode", cn);
+                    cm.Parameters.AddWithValue("@prodcode", txtProdCode.Text);
                     cm.Parameters.AddWithValue("@description", txtDescription.Text);
                     cm.Parameters.AddWithValue("@brand", cbBrand.Text);
                     cm.Parameters.AddWithValue("@category", cbCategory.Text);
@@ -106,6 +110,42 @@ namespace POS
                 cn.Close();
            
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtQty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtQty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbBrand_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
