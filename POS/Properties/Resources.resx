@@ -121,14 +121,23 @@
   <data name="vusa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vusa.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_34895-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_34895-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reject" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="314888575_5786970791364477_2229827413051501625_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\314888575_5786970791364477_2229827413051501625_n.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="magnifying-glass (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifying-glass (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="vusa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vusa1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bb-logo-blackbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bb-logo-blackbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_131108-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_131108-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,11 +148,23 @@
   <data name="boxes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boxes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restore (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restore (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="report" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="313867371_688746489539312_523709050936567783_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\313867371_688746489539312_523709050936567783_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,17 +172,32 @@
   <data name="img_131108" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_131108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="img_34895-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_34895-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="log-out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\log-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_34895" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_34895.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot 2022-11-09 184454" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot 2022-11-09 184454.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bb-logo-brownbg " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bb-logo-brownbg .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bb-wordmark-blackbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bb-wordmark-blackbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vusa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vusa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bblogo-profile-pic-bbfranchise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bblogo-profile-pic-bbfranchise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_87237-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_87237-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,17 +205,29 @@
   <data name="package" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\package.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bblogo-profile-pic-bbfranchise1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bblogo-profile-pic-bbfranchise1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="img_87237" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_87237.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_570334" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_570334.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_570334-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_570334-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,22 +238,31 @@
   <data name="img_570334-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_570334-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="313867371_688746489539312_523709050936567783_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\313867371_688746489539312_523709050936567783_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screenshot 2022-11-09 184454" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2022-11-09 184454.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_34895-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_34895-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="magnifying-glass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifying-glass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="image-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="log-out (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\log-out (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_570334-removebg-preview (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_570334-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bblogo-profile-pic-bbfranchise2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bblogo-profile-pic-bbfranchise2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="log-out (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\log-out (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -1,6 +1,6 @@
 ﻿namespace POS
 {
-    partial class StockForm
+    partial class StockInForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,43 +29,42 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.btnSave = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Select = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 33);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Stock In";
+            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(110)))), ((int)(((byte)(25)))));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.productBtn);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Controls.Add(this.txtSearch);
+            this.panel1.Location = new System.Drawing.Point(12, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1113, 504);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.txtSearch);
-            this.panel2.Location = new System.Drawing.Point(878, 29);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(203, 33);
-            this.panel2.TabIndex = 31;
+            this.panel1.Size = new System.Drawing.Size(203, 33);
+            this.panel1.TabIndex = 30;
             // 
             // txtSearch
             // 
@@ -98,6 +97,43 @@
             this.txtSearch.WaterMark = "Search here";
             this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(236, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 16);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Stock In Date:";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // date
+            // 
+            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Location = new System.Drawing.Point(331, 51);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(349, 22);
+            this.date.TabIndex = 33;
+            this.date.ValueChanged += new System.EventHandler(this.date_ValueChanged);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(932, 526);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(86, 32);
+            this.btnSave.TabIndex = 34;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -121,25 +157,25 @@
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
+            this.Select});
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 79);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(1104, 436);
-            this.dataGridView1.TabIndex = 7;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.Size = new System.Drawing.Size(1006, 438);
+            this.dataGridView1.TabIndex = 37;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column1.Frozen = true;
             this.Column1.HeaderText = "NO.";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 49;
+            this.Column1.Visible = false;
+            this.Column1.Width = 30;
             // 
             // Column2
             // 
@@ -157,89 +193,66 @@
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "BRAND";
+            this.Column4.HeaderText = "QUANTITY";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
-            // Column5
+            // dataGridViewImageColumn1
             // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column5.HeaderText = "CATEGORY";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "Column5";
+            this.dataGridViewImageColumn1.Image = global::POS.Properties.Resources._checked;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            this.dataGridViewImageColumn1.Width = 5;
             // 
-            // Column6
+            // Select
             // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column6.HeaderText = "QTY";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
+            this.Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Select.HeaderText = "";
+            this.Select.Image = global::POS.Properties.Resources._checked;
+            this.Select.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Select.Name = "Select";
+            this.Select.ReadOnly = true;
+            this.Select.Width = 5;
             // 
-            // Column7
-            // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column7.HeaderText = "PRICE";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // productBtn
-            // 
-            this.productBtn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.productBtn.FlatAppearance.BorderSize = 0;
-            this.productBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.productBtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productBtn.ForeColor = System.Drawing.Color.Black;
-            this.productBtn.Location = new System.Drawing.Point(16, 42);
-            this.productBtn.Name = "productBtn";
-            this.productBtn.Size = new System.Drawing.Size(71, 20);
-            this.productBtn.TabIndex = 6;
-            this.productBtn.Text = "Stock Entry";
-            this.productBtn.UseVisualStyleBackColor = false;
-            this.productBtn.Click += new System.EventHandler(this.productBtn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(110)))), ((int)(((byte)(25)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "STOCK";
-            // 
-            // StockForm
+            // StockInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 504);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(110)))), ((int)(((byte)(25)))));
+            this.ClientSize = new System.Drawing.Size(1028, 570);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.date);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "StockForm";
-            this.Text = "Form2";
+            this.Name = "StockInForm";
+            this.Text = "StockInForm";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button productBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private MetroFramework.Controls.MetroTextBox txtSearch;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker date;
+        public System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.Panel panel2;
-        private MetroFramework.Controls.MetroTextBox txtSearch;
+        private System.Windows.Forms.DataGridViewImageColumn Select;
     }
 }

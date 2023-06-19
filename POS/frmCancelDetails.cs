@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace POS
 {
-    public partial class Form3 : Form
+    public partial class frmCancelDetails : Form
     {
-        public Form3()
+        public frmCancelDetails()
         {
             InitializeComponent();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
+            this.Dispose();
+        }
 
+        private void AboAction_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

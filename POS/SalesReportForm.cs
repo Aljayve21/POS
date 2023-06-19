@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace POS
 {
-    public partial class Form1 : Form
+    public partial class SalesReportForm : Form
     {
-        public Form1()
+        public SalesReportForm()
         {
             InitializeComponent();
+        }
+
+        private void SalesReportForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
